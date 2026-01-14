@@ -41,4 +41,38 @@ nav ul li a{
     text-decoration: none;
     font-size: 19px;
     font-weight: bold;
+    position: relative;
 }
+nav ul li a::after{
+    content:'';
+    width: 0%;
+    height: 3px;
+    background: #00ff22;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.6s;
+
+}
+nav ul li a:hover::after{
+    width: 98%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
