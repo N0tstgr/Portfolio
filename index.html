@@ -40,11 +40,12 @@
                     <h2 class="sub-title"> About Vikash </h2>
                     <p>Magic will happen just keep doing your work with the same intensity everyday and improve day by day</p>
                     <div class="tab-titles">
-                        <p class="tab-links">Experiences</p>
-                        <p class="tab-links active-links">Skills</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experiences')">Experiences</p>
+                        
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents active-tab " id="skills">
                         <ul>
                             <li><span>AI Engineer</span><br> Creating Neural Network</li>
                             <li><span>Full-Stack Web-Developer</span><br>Website Development</li>
@@ -53,11 +54,47 @@
 
                         </ul>
                     </div>
+                      <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>2024 - 2025 </span><br>Participated in  Hackathon at Galgotias International Hackathon & <br> Smart India Hackathon</li>
+                            
+
+                        </ul>
+                    </div>
+                      <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 - 2028</span><br> B.tech in Electronics & Communication Engineering From Galgotias College of Engineering & Technology</li>
+                            <li><span>2023 - current</span><br>Linux and Cs Fundamentals from FreeCodeCamp.org</li>
+                            <li><span>2019 - 2023</span><br>Class X & Class XII from Raj Montessori Inter College</li>
+
+                        </ul>
+                    </div>
                 </div>
             </div>
          </div>
 
         </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-links");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+
+
+            }
+
+         
+
+
+
+        </script>
     
 </body>
 </html>
