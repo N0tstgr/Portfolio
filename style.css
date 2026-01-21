@@ -94,6 +94,33 @@ nav ul li a:hover::after{
 .about-cl-2{
     flex-basis: 65%;
 }
+.sub-title{
+    font-size: 59px;
+    font-weight: 599;
+    color: #fff;
+
+}
+.tab-titles{
+    display: flex;
+    margin:18px 0 39px;
+}
+.tab-links{
+    margin-right: 49px;
+    font-size: 17px;
+    font-weight: 498;
+    cursor: pointer;
+    position:relative;
+}
+.tab-links::after{
+    content:'';
+    width: 0;
+    height: 2px;
+    background:#00ff22;
+    position: absolute;
+    left:0;
+    bottom: -7px;
+    transition: 0.8s;
+}
 
 
 
