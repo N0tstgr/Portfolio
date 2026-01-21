@@ -84,14 +84,16 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 .about-cl-1{
-    flex-basis: 33%;
+    flex-basis: 30%;
 
 }
 .about-cl-1 img{
     width: 100%;
     border-radius: 16px;
 }
-
+.about-cl-2{
+    flex-basis: 65%;
+}
 
 
 
