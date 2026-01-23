@@ -198,6 +198,11 @@ transition: background 0.5s, transform 0.5s;
 
 }
 
+/* ======================Portfolio========================================================== */
+
+#portfolio{
+    padding: 50px 0;
+}
 
 
 
