@@ -40,10 +40,10 @@
                     <h2 class="sub-title"> About Vikash </h2>
                     <p>Magic will happen just keep doing your work with the same intensity everyday and improve day by day</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Experiences')">Experiences</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experiences')">Experiences</p>
                         
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab " id="skills">
                         <ul>
@@ -61,7 +61,7 @@
 
                         </ul>
                     </div>
-                      <div class="tab-contents" id="education">
+                      <div class="tab-contents " id="education">
                         <ul>
                             <li><span>2024 - 2028</span><br> B.tech in Electronics & Communication Engineering From Galgotias College of Engineering & Technology</li>
                             <li><span>2023 - current</span><br>Linux and Cs Fundamentals from FreeCodeCamp.org</li>
@@ -77,7 +77,7 @@
 
         <script>
             var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
 
             function opentab(tabname){
                 for(tablink of tablinks){
@@ -86,7 +86,8 @@
                 for(tabcontent of tabcontents){
                     tabcontent.classList.remove("active-tab");
                 }
-
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
 
             }
 
