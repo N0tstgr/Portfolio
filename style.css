@@ -287,6 +287,17 @@ transition: background 0.5s, transform 0.5s;
 }
 /* =====================================Contact-Section==================================== */
 
+.contact-l{
+    flex-basis:33%;
+
+}
+.contact-r{
+    flex-basis:62%;
+}
+.contact-r{
+    
+}
+
 
 
 
