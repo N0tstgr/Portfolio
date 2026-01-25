@@ -271,6 +271,20 @@ transition: background 0.5s, transform 0.5s;
 .work:hover .layer{
     height:100%;  
 }
+.btn{
+    display:block;
+    width:fit-content;
+    margin:50px auto;
+    border: 1px solid rgb(63, 231, 11);
+    padding:14px 50px;
+    border-radius:6px;
+    text-decoration:none;
+    transition: background 0.5s;
+}
+.btn:hover{
+    transform : scale(1.1);
+    background-color:#51ff00;
+}
 
 
 
