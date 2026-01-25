@@ -294,8 +294,26 @@ transition: background 0.5s, transform 0.5s;
 .contact-r{
     flex-basis:62%;
 }
-.contact-r{
-    
+.contact-l p{
+    margin-top: 30px;
+}
+.social-i{
+    margin-top:29px;
+}
+
+.social-i a{
+    text-decoration:none;
+    font-size:31px;
+    margin-right:15px;
+    color:#ababab;
+    display:inline-block;
+    transition:transform 0.5s;
+}
+
+.social-i a:hover{
+color:#51ff00;
+transform:translateY(-6px);
+
 }
 
 
