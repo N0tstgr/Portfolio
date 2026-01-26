@@ -369,19 +369,58 @@ nav .fas{
         font-size:30px;
 
     }
-    nav .fas{
+    nav .fa{
         display: block;
         font-size:25px;
+        cursor:pointer;
     }
     nav ul{
         background: #3cff00;
         position:fixed;
         top:0;
-        right:0;
+        right:-200px;
         width:200px;
         height: 100vh;
-        padding-top
+        padding-top: 60px;
+        z-index:2;
+        transition: right 0.5s;
+
     }
+    nav ul li{
+        display: block;
+        margin:25px;
+
+    }
+    nav ul .fa-circle-xmark{
+        position:absolute;
+        top:20px;
+        right:8px;
+        font-size:25px;
+        cursor:pointer;
+        z-index: 4;
+      }
+      .subtitle{
+        font-size:40px;
+      }
+      .about-cl-1, .about-col-2{
+        flex-basis: 100%;
+      }
+      .about-cl-1{
+        margin-bottom:30px;
+      }
+      .about-col-2{
+        font-size:14px;
+      }
+      .tab-links{
+        font-size: 16px;
+        margin:20px;
+      }
+      .contact-left, .contact-right{
+        flex-basis:100%;
+      }
+      .copyright{
+        font-size:14px;
+      }
 }
 
 
