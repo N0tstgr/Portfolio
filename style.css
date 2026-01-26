@@ -373,6 +373,15 @@ nav .fas{
         display: block;
         font-size:25px;
     }
+    nav ul{
+        background: #3cff00;
+        position:fixed;
+        top:0;
+        right:0;
+        width:200px;
+        height: 100vh;
+        padding-top
+    }
 }
 
 
