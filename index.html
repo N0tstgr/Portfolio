@@ -9,7 +9,14 @@
 <script src="https://kit.fontawesome.com/589f6d9556.js" crossorigin="anonymous"></script>
 <body>
     <script src="script.js"></script>
+
     <div id="header"> 
+        <div class="video-container">
+              <video autoplay muted loop playsinline>
+                        <source src="images/black-hole.960x540.mp4" type="video/mp4">
+     
+                </video>
+                     </div>
         <div class="container">
             <nav>
                 <img src="images/ChatGPT Image Jan 14, 2026, 06_42_18 AM.png" class="logo">
@@ -226,19 +233,38 @@
 
 
         </script>
-        <script>
-	const scriptURL = 'https://script.google.com/macros/s/AKfycbx9ly1MTjyq08xU_3wA8buPp8figNeehy4IyoQACi-IWFfCsAE4qkLozN9IhbVRonb3/exec'
-	const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
+   <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx9ly1MTjyq08xU_3wA8buPp8figNeehy4IyoQACi-IWFfCsAE4qkLozN9IhbVRonb3/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
 
-	form.addEventListener('submit', e => {
-		e.preventDefault()
-		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-			.then(response => response.json())
-			.then(response => console.log('Success!', response))
-			.catch(error => console.error('Error!', error.message))
-	})
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+
+    // 1️⃣ Clear inputs immediately
+    form.reset()
+
+    // 2️⃣ Show message instantly
+    msg.innerHTML = "Message sent successfully"
+
+    // 3️⃣ Send data
+    fetch(scriptURL, {
+      method: 'POST',
+      body: new FormData(form)
+    })
+    .then(res => res.json())
+    .then(() => {
+      setTimeout(() => {
+        msg.innerHTML = ""
+      }, 2000)
+    })
+    .catch(err => {
+      msg.innerHTML = "Something went wrong"
+      console.error(err)
+    })
+  })
 </script>
+
     
 </body>
 </html>
