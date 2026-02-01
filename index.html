@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <script src="script.js"></script>
 
     <link rel="stylesheet" href="style.css">
+            <script src="script.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r158/three.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+
+            
 
 
 </head>
 <script src="https://kit.fontawesome.com/589f6d9556.js" crossorigin="anonymous"></script>
 <body>
-
+<div id="animation-bg"></div>
     <div id="header"> 
         <!-- <div class="video-container">
               <video autoplay muted loop playsinline>
@@ -224,6 +225,18 @@
             }
 
         </script>
+        <script>
+VANTA.BIRDS({
+  el: "#animation-bg",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00
+})
+</script>
         
    <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbx9ly1MTjyq08xU_3wA8buPp8figNeehy4IyoQACi-IWFfCsAE4qkLozN9IhbVRonb3/exec'
@@ -255,7 +268,25 @@
       console.error(err)
     })
   })
+
+  
 </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+
+  <script>
+  VANTA.BIRDS({
+    el: "#animation-bg",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200,
+    minWidth: 200,
+    scale: 1,
+    scaleMobile: 1
+  });
+  </script>
+
 
     
 </body>
